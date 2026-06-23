@@ -117,7 +117,7 @@ const jackpotFrequency = percentage(jackpotHits / paidSpins);
 const averagePaidWin = paidWins ? totalPaid / paidWins : 0;
 const volatilityProxy = sumSquaredPayoutRatio / totalResolvedSpins;
 
-console.log(`Slot simulation: 7 Rings Cursed Reels`);
+console.log(`Slot simulation: A Very Suspicious 7-Eleven`);
 console.log(`Requested paid spins: ${requestedSpins.toLocaleString()}`);
 console.log(`Total resolved spins: ${totalResolvedSpins.toLocaleString()}`);
 console.log(`Total bet: ${Math.round(totalBet).toLocaleString()}`);

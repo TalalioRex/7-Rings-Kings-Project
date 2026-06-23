@@ -357,6 +357,51 @@ export const PROJECT_ASSETS: ProjectAsset[] = [
   }
 ];
 
+export const shrimpieJackpotArt = [
+  {
+    id: "shrimpie-symbol",
+    displayName: "Shrimpie the Seventh",
+    assetPath: "/assets/jackpot/shrimpie-the-seventh/symbol.png",
+    sourcePath: "Slot Assets/Shrimpie the Seventh/Shrimpie the Seventh.png"
+  },
+  {
+    id: "shrimpie-pose-01",
+    displayName: "Shrimpie the Seventh Pose 1",
+    assetPath: "/assets/jackpot/shrimpie-the-seventh/pose-01.png",
+    sourcePath: "Slot Assets/Shrimpie the Seventh/Shrimpie the Seventh - Pose (1).png"
+  },
+  {
+    id: "shrimpie-pose-02",
+    displayName: "Shrimpie the Seventh Pose 2",
+    assetPath: "/assets/jackpot/shrimpie-the-seventh/pose-02.png",
+    sourcePath: "Slot Assets/Shrimpie the Seventh/Shrimpie the Seventh - Pose (2).png"
+  },
+  {
+    id: "shrimpie-pose-03",
+    displayName: "Shrimpie the Seventh Pose 3",
+    assetPath: "/assets/jackpot/shrimpie-the-seventh/pose-03.png",
+    sourcePath: "Slot Assets/Shrimpie the Seventh/Shrimpie the Seventh - Pose (3).png"
+  },
+  {
+    id: "shrimpie-pose-04",
+    displayName: "Shrimpie the Seventh Pose 4",
+    assetPath: "/assets/jackpot/shrimpie-the-seventh/pose-04.png",
+    sourcePath: "Slot Assets/Shrimpie the Seventh/Shrimpie the Seventh - Pose (4).png"
+  },
+  {
+    id: "shrimpie-pose-05",
+    displayName: "Shrimpie the Seventh Pose 5",
+    assetPath: "/assets/jackpot/shrimpie-the-seventh/pose-05.png",
+    sourcePath: "Slot Assets/Shrimpie the Seventh/Shrimpie the Seventh - Pose (5).png"
+  },
+  {
+    id: "shrimpie-pose-06",
+    displayName: "Shrimpie the Seventh Pose 6",
+    assetPath: "/assets/jackpot/shrimpie-the-seventh/pose-06.png",
+    sourcePath: "Slot Assets/Shrimpie the Seventh/Shrimpie the Seventh - Pose (6).png"
+  }
+] as const;
+
 export const SCANNED_ASSET_SUMMARY = [
   { sourceFolderName: "Backgrounds", category: "background", images: 8, videos: 0, recommendedUse: "Gameplay and launcher backgrounds." },
   { sourceFolderName: "Intro/Images", category: "intro-image", images: 5, videos: 0, recommendedUse: "Launcher and title ambience." },

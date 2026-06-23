@@ -6,6 +6,7 @@ type GameControlsProps = {
   canSpin: boolean;
   isSpinning: boolean;
   isFreeSpinMode: boolean;
+  isTalaBoostReady: boolean;
   onDecreaseBet: () => void;
   onIncreaseBet: () => void;
   onSpin: () => void;
@@ -20,6 +21,7 @@ export function GameControls({
   canSpin,
   isSpinning,
   isFreeSpinMode,
+  isTalaBoostReady,
   onDecreaseBet,
   onIncreaseBet,
   onSpin,
@@ -64,7 +66,7 @@ export function GameControls({
         </div>
 
         <button
-          className="spin-button control-spin-button"
+          className={["spin-button control-spin-button", isTalaBoostReady ? "tala-boost-spin-ready" : ""].join(" ")}
           disabled={!canSpin}
           onClick={onSpin}
           type="button"

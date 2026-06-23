@@ -12,17 +12,17 @@ export function TitleScreen({ onStart }: TitleScreenProps) {
         <div className="relative grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
           <div>
             <Image
-              alt="7 Rings for 7 Kings"
+              alt="7 Rings 7 Kings"
               className="mb-5 h-auto w-48 drop-shadow-[0_0_22px_rgba(64,245,255,0.35)] md:w-64"
               height={260}
               priority
               src="/assets/brand/7-rings-logo.png"
               width={520}
             />
-            <p className="text-xs font-bold uppercase tracking-[0.32em] text-neonGreen">7 Rings, 7 Kings Universe</p>
+            <p className="text-xs font-bold uppercase tracking-[0.32em] text-neonGreen">7 Rings 7 Kings Universe</p>
             <h1 className="mt-4 text-4xl font-black leading-tight text-white md:text-6xl">
-              7 Rings:
-              <span className="block text-neonCyan">Aisle 7 Jackpot</span>
+              7 Rings 7 Kings
+              <span className="block text-neonCyan">A Very Suspicious 7-Eleven</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200 md:text-lg">
               Serious heroes. Stupid destiny. Beautiful neon chaos.
@@ -48,7 +48,7 @@ export function TitleScreen({ onStart }: TitleScreenProps) {
               ))}
             </div>
             <p className="mt-5 text-sm leading-6 text-slate-300">
-              Phase 1 opens with Cursed Reels, a fake-money classic slot prototype built from the current creature assets.
+              Phase 1 opens with a fake-money suspicious 7-Eleven slot prototype built from the current creature assets.
             </p>
           </div>
         </div>

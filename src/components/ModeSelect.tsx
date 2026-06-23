@@ -4,14 +4,18 @@ import { LockedAdventureCard } from "@/components/LockedAdventureCard";
 import { getAssetById } from "@/lib/assets";
 
 type ModeSelectProps = {
-  onPlayCursedReels: () => void;
+  onPlaySlot: () => void;
+  onPlayKazPrototype: () => void;
+  onPlayMarcusPrototype: () => void;
+  onPlayPippaPrototype: () => void;
+  onPlayTalaPrototype: () => void;
 };
 
-export function ModeSelect({ onPlayCursedReels }: ModeSelectProps) {
+export function ModeSelect({ onPlaySlot, onPlayKazPrototype, onPlayMarcusPrototype, onPlayPippaPrototype, onPlayTalaPrototype }: ModeSelectProps) {
   const logo = getAssetById("official-logo-scene")?.assetPath ?? "/assets/logo/logo-scene.png";
   const introImage = getAssetById("intro-main-team")?.assetPath ?? "/assets/intro/images/intro-01.png";
   const introVideo = getAssetById("intro-main-video")?.assetPath;
-  const cursedReelsImage = getAssetById("chuck-vadar")?.assetPath ?? "/assets/slot-symbols/chuck-vadar/symbol.png";
+  const slotModeImage = getAssetById("chuck-vadar")?.assetPath ?? "/assets/slot-symbols/chuck-vadar/symbol.png";
 
   return (
     <main
@@ -34,7 +38,7 @@ export function ModeSelect({ onPlayCursedReels }: ModeSelectProps) {
         <header className="mode-select-header">
           <div className="mode-logo-wrap">
             <Image
-              alt="7 Rings for 7 Kings logo"
+              alt="7 Rings 7 Kings logo"
               className="mode-logo"
               height={320}
               priority
@@ -44,7 +48,7 @@ export function ModeSelect({ onPlayCursedReels }: ModeSelectProps) {
           </div>
           <div className="mode-title-copy">
             <p>Select Mode</p>
-            <h1>7 Rings: Aisle 7 Jackpot</h1>
+            <h1>7 Rings 7 Kings</h1>
             <span>Fake-money prototype / Phase 1</span>
           </div>
         </header>
@@ -52,33 +56,38 @@ export function ModeSelect({ onPlayCursedReels }: ModeSelectProps) {
         <div className="mode-grid">
           <article className="mode-card mode-card-playable">
             <div className="mode-card-art">
-              <Image alt="Chuck Vadar Wild slot symbol" fill sizes="(max-width: 820px) 100vw, 42vw" src={cursedReelsImage} />
+              <Image alt="Chuck Vadar Wild slot symbol" fill sizes="(max-width: 820px) 100vw, 42vw" src={slotModeImage} />
             </div>
             <div className="mode-card-topline">
               <div>
                 <p>Playable Now</p>
-                <h2>Cursed Reels</h2>
+                <h2>A Very Suspicious 7-Eleven</h2>
               </div>
               <span className="mode-status mode-status-live">Live</span>
             </div>
             <p className="mode-card-copy">
-              Classic fake-money reels using the current 7 Rings slot creature assets, Wilds, Scatters, free spins, and demo coin balance.
+              A fake-money slot mode for 7 Rings 7 Kings: A Very Suspicious 7-Eleven, using the current creature assets, Wilds, Scatters, free spins, and demo coin balance.
             </p>
-            <div className="mode-feature-row" aria-label="Cursed Reels features">
+            <div className="mode-feature-row" aria-label="A Very Suspicious 7-Eleven features">
               <span>5x3 reels</span>
               <span>10 lines</span>
               <span>Local jackpot</span>
             </div>
             <button
               className="mode-primary-button"
-              onClick={onPlayCursedReels}
+              onClick={onPlaySlot}
               type="button"
             >
-              Play Cursed Reels
+              Play Suspicious 7-Eleven Slot
             </button>
           </article>
 
-          <LockedAdventureCard />
+          <LockedAdventureCard
+            onPlayKazPrototype={onPlayKazPrototype}
+            onPlayMarcusPrototype={onPlayMarcusPrototype}
+            onPlayPippaPrototype={onPlayPippaPrototype}
+            onPlayTalaPrototype={onPlayTalaPrototype}
+          />
         </div>
       </section>
     </main>

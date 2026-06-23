@@ -30,7 +30,7 @@ export function SettingsModal({
         </div>
 
         <div className="mt-5 grid gap-3">
-          <SettingToggle label="Sound placeholder" enabled={soundEnabled} onClick={onToggleSound} />
+          <SettingToggle label="Sound Effects" enabled={soundEnabled} onClick={onToggleSound} />
           <SettingToggle label="Music placeholder" enabled={musicEnabled} onClick={onToggleMusic} />
           <SettingToggle label="Fast spin" enabled={fastSpinEnabled} onClick={onToggleFastSpin} />
         </div>

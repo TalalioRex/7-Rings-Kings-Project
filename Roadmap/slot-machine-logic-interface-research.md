@@ -1,7 +1,7 @@
 ﻿# Slot Machine Logic and Interface Reference
 
 Research date: 2026-06-21
-Project: 7 Rings: Aisle 7 Jackpot / Cursed Reels
+Project: 7 Rings 7 Kings / A Very Suspicious 7-Eleven
 Scope: fake-money prototype only. This is not compliance guidance for real-money gambling.
 
 ## Best References Found

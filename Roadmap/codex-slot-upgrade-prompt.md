@@ -6,7 +6,7 @@ Project path:
 C:\Users\talayeh.ghofrani_gam\Projects\7 Rings, Kings Project
 ```
 
-You are working on a Next.js / React / TypeScript fake-money slot prototype called **7 Rings: Aisle 7 Jackpot**. This is a creative demo only. Do not add real-money gambling, deposits, withdrawals, payments, wallets, casino certification claims, or regulated gambling language.
+You are working on a Next.js / React / TypeScript fake-money slot prototype called **7 Rings 7 Kings**. The playable slot mode is **7 Rings 7 Kings: A Very Suspicious 7-Eleven**. This is a creative demo only. Do not add real-money gambling, deposits, withdrawals, payments, wallets, casino certification claims, or regulated gambling language.
 
 ## Goal
 

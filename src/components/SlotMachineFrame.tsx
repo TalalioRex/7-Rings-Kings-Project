@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { PAYLINES } from "@/lib/paylines";
-import type { PlayerCharacter } from "@/lib/playerCharacters";
+import type { PlayerCharacter, PlayerCharacterId } from "@/lib/characters";
 import { FeaturePanel } from "@/components/FeaturePanel";
 
 type SlotMachineFrameProps = {
@@ -10,7 +10,10 @@ type SlotMachineFrameProps = {
   jackpotMeter: number;
   freeSpinsRemaining: number;
   isFreeSpinMode: boolean;
+  characters: PlayerCharacter[];
   selectedCharacter: PlayerCharacter;
+  talaBoostProgress: number;
+  onSelectCharacter: (characterId: PlayerCharacterId) => void;
   reelWindow: ReactNode;
   resultPanel: ReactNode;
   controls: ReactNode;
@@ -23,7 +26,10 @@ export function SlotMachineFrame({
   jackpotMeter,
   freeSpinsRemaining,
   isFreeSpinMode,
+  characters,
   selectedCharacter,
+  talaBoostProgress,
+  onSelectCharacter,
   reelWindow,
   resultPanel,
   controls
@@ -36,8 +42,8 @@ export function SlotMachineFrame({
           <strong>{jackpotMeter.toLocaleString()}</strong>
         </div>
         <div className="slot-title-mark">
-          <span className="slot-kicker">7 Rings: Aisle 7 Jackpot</span>
-          <h1>Cursed Reels</h1>
+          <span className="slot-kicker">7 Rings 7 Kings</span>
+          <h1>A Very Suspicious 7-Eleven</h1>
           <span className="slot-prototype-badge">Fake-money prototype</span>
         </div>
         <div className="slot-bonus-ribbon" aria-label="Free spin awards">
@@ -74,7 +80,12 @@ export function SlotMachineFrame({
           <div className="reel-frame-cap bottom" />
         </section>
 
-        <FeaturePanel selectedCharacter={selectedCharacter} />
+        <FeaturePanel
+          characters={characters}
+          onSelectCharacter={onSelectCharacter}
+          selectedCharacter={selectedCharacter}
+          talaBoostProgress={talaBoostProgress}
+        />
       </div>
 
       <div className="slot-bottom-band">

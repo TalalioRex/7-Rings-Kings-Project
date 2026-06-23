@@ -1,5 +1,5 @@
 # Character Persona Roadmap Report
-## 7 Rings for 7 Kings
+## 7 Rings 7 Kings
 ### Master Merged Character Bible, Production Roadmap, and Persona System
 
 **Version:** Master Merge v1.0  
@@ -11,7 +11,7 @@
 
 # 1. Purpose of This Master Report
 
-This document merges the strongest parts of both character persona roadmap versions into one complete production file for the **7 Rings for 7 Kings** universe.
+This document merges the strongest parts of both character persona roadmap versions into one complete production file for the **7 Rings 7 Kings** universe.
 
 The report defines how every major character should look, move, speak, react, and function inside the story. It is designed to keep consistency across:
 
@@ -85,7 +85,7 @@ This master file uses **Neon Rebel Pop Noir** as the official expanded style nam
 
 ## 3.1 Main Genre Identity
 
-**7 Rings for 7 Kings** is a neon fantasy action-comedy set inside a cursed modern convenience store.
+**7 Rings 7 Kings** is a neon fantasy action-comedy set inside a cursed modern convenience store.
 
 The formula:
 

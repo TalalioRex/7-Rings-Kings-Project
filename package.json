@@ -1,5 +1,5 @@
 {
-  "name": "7-rings-aisle-7-jackpot",
+  "name": "7-rings-7-kings",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,14 @@
     "simulate:slots": "node scripts/simulateSlots.mjs"
   },
   "dependencies": {
+    "howler": "^2.2.4",
     "next": "^15.3.0",
+    "phaser": "^4.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@types/howler": "^2.2.13",
     "@types/node": "^22.15.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
